@@ -6,11 +6,9 @@ This project sets up an AWS Bedrock Knowledge Base integrated with an Aurora Ser
 
 1. [Project Overview](#project-overview)
 2. [Prerequisites](#prerequisites)
-3. [Project Structure](#project-structure)
-4. [Deployment Steps](#deployment-steps)
-5. [Using the Scripts](#using-the-scripts)
-6. [Customization](#customization)
-7. [Troubleshooting](#troubleshooting)
+3. [Deployment Steps](#deployment-steps)
+4. [Using the Scripts](#using-the-scripts)
+5. [Troubleshooting](#troubleshooting)
 
 ## Project Overview
 
@@ -40,46 +38,6 @@ Before you begin, ensure you have the following:
 - Python 3.10 or later
 - pip (Python package manager)
 
-## Project Structure
-
-```
-project-root/
-│
-├── stack1
-|   ├── main.tf
-|   ├── outputs.tf
-|   └── variables.tf
-|
-├── stack2
-|   ├── main.tf
-|   ├── outputs.tf
-|   └── variables.tf
-|
-├── modules/
-│   ├── bedrock_kb/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   └── database/
-│       ├── main.tf
-│       ├── variables.tf
-│       └── outputs.tf
-│
-├── scripts/
-│   ├── spec-sheets/
-│       └── file1.pdf
-│       └── file2.pdf
-│   └── aurora_sql.sql
-│   └── upload_to_s3.py
-│
-├── spec-sheets/
-│   └── machine_files.pdf
-│
-└── __init__.py
-└── app.py
-└── bedrock_utils.py
-└── README.md
-└── requirements.txt
 ```
 
 ## Deployment Steps
@@ -147,22 +105,9 @@ To use it:
 2. Optionally, update the `prefix` variable if you want to upload to a specific path in the bucket.
 3. Run `python scripts/upload_to_s3.py`.
 
-## Complete chat app
-
-### Complete invoke model and knoweldge base code
-- Open the bedrock_utils.py file and the following functions:
-  - query_knowledge_base
-  - generate_response
-
-### Complete the prompt validation function
-- Open the bedrock_utils.py file and the following function:
-  - valid_prompt
-
-  Hint: categorize the user prompt
 
 ## Troubleshooting
 
-- If you encounter permissions issues, ensure your AWS credentials have the necessary permissions for creating all the resources.
 - For database connection issues, check that the security group allows incoming connections on port 5432 from your IP address.
 - If S3 uploads fail, verify that your AWS credentials have permission to write to the specified bucket.
 - For any Terraform errors, ensure you're using a compatible version and that all module sources are correctly specified.
