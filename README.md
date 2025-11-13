@@ -14,7 +14,7 @@ The project consists of several components:
 4. A python script for uploading the pdf files to an Amazon S3 Bucket (upload_s3.py)
 5. A python script for implementing the RAG system using an Large Language Model (LLM) from Amazon Bedrock foundational models (bedrock_utils.py)
 6. A python script for building and launching a Streamlit app for the user to make queries (app.py)
-7. A Screenshots folder with images that show the result of different steps in the deployment process. Read the names for their description.
+7. A Screenshots folder with images that show the result of different steps in the deployment process. Read the names for their description (note that the screenshots of the UI are marked with red capital letters indicating the intended categories with which the system should filter out each user prompt).
 
 The goal is to create the RAG application based on a KB created from the heavy machinery private documents that will allow users to ask for specific information in them using natural language in order to get back accurate in-context responses.
 
