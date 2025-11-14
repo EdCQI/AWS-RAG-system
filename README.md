@@ -40,7 +40,7 @@ Once installed, proceed:
 2. Clone the repository: ```git clone this_repository_url``` (use the actual url)
 3. Create a new python virtual environment using venv, virtualenv, conda or any other tool of your choice. Using venv: ```python -m venv name_of_env``` ->  ```name_of_env\Scripts\activate```
 4. Activate the environment and install boto3 and streamlit: ```pip install boto3 streamlit```
-5. If you haven't done it, configure the AWS credentials using AWS CLI (if you are using an AWS federated access, open the AWS console through your access provider to obtain the initial configuration tokens and store them): ```aws configure``` -> enter tokens (region used in this project was *us-east-1* and output was set to *json*). 
+5. Unless you already have it done, configure the AWS credentials using AWS CLI (if you are using an AWS federated access, open the AWS console through your access provider to obtain the initial configuration tokens and store them): ```aws configure``` -> enter tokens (region used in this project was *us-east-1* and output was set to *json*). 
 6. Navigate to stack1 folder and initialize terraform. This stack includes VPC, Aurora servlerless and S3: ```terraform init```
 7. Review and modify the Terraform variables in stack1/main.tf as needed, particularly:
    - AWS region and AZs (Availability Zones)
