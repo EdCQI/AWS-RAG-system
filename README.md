@@ -33,7 +33,6 @@ Before you start, you need to have installed:
 - AWS CLI
 - terraform (version 0.12 or later)
 - python (3.10 or later)
-- pip (python package manager)
 - git
 
 Once installed, proceed:
