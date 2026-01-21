@@ -35,7 +35,8 @@ Before you start, you need to have installed:
 - python (3.10 or later)
 - git
 
-Once installed, proceed:
+Once installed, proceed with the steps below:
+(remember to check out the Screenshots folder for a visual orientation on what you should see when doing some of the steps)
 1. Navigate to the folder where you will clone this repository in your local machine
 2. Clone the repository: ```git clone this_repository_url``` (use the actual url)
 3. Create a new python virtual environment using venv, virtualenv, conda or any other tool of your choice. Using venv: ```python -m venv name_of_env``` ->  ```name_of_env\Scripts\activate```
