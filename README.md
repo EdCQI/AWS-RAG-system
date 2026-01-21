@@ -1,5 +1,5 @@
 # **Intelligent document querying application using a RAG system in AWS**
-This project uses Amazon Web Services (AWS) to set up an Amazon Bedrock knowledge base (KB) integrated with an Aurora Serverless PostgreSQL database created from pdf documents on heavy mining and construction machinery stored in an Amazon S3 bucket to build an app with python using Streamlit where users can query for specific information about this machinery. 
+This project uses Amazon Web Services (AWS) to set up an Amazon Bedrock knowledge base (KB) integrated with an Aurora Serverless PostgreSQL database created from pdf documents on heavy mining and construction machinery stored in an Amazon S3 bucket to build an application with Python using Streamlit where users can query for specific information about this machinery. 
 
 <img src="Screenshots/streamlit_UI_awsRAGsystem.png" alt="User Interface application" width="800">
 
